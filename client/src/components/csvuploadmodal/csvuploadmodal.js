@@ -30,7 +30,7 @@ function Csvuploadmodal() {
             onData={async (results) => {
               axios.post('/product/csvadd', results.validData)
                 .then(res => {console.log(res.data); });
-                this.props.history.push("/catalogue")
+                
              
             }}
         >
