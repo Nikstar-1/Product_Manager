@@ -40,7 +40,7 @@ class ProfilePage extends Component {
 
     // console.log(this.retriveData());
     try {
-      const resp = await axios.get("http://localhost:8080/api/test/user", {
+      const resp = await axios.get("/api/test/user", {
         headers: {
           "Content-Type": "application/json",
           "x-access-token": localStorage.getItem("@token"),
@@ -60,7 +60,7 @@ class ProfilePage extends Component {
       accessToken: this.state.accessToken,
     };
     try {
-      const resp = await axios.post("http://localhost:8080/api/auth/logout", creadentials);
+      const resp = await axios.post("/api/auth/logout", creadentials);
       console.log(resp.data);
       localStorage.setItem("isLoggedIn", false);
       localStorage.setItem("@token", resp.data.accessToken);
