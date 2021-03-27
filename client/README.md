@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Project 3
+​
+​
+## Group 2:
+George Robertshaw. robertsicher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Rekha Kumari. Nikstar-1
+​
+​
+## Project Title: 
+Product Manager
+​
+## Website Title and Description
+​
+Product Manager
+​
+An app to for companies to internally manage the products that they are listing on distributors sites so they can 
 
-## Available Scripts
+easily upload, store and download information as CSV’s in order to create listings on other websites.
+​
+​
+The website can be found at the following address: https://desolate-chamber-36305.herokuapp.com/
+​
+## Who is our audience? 
+​
+Business Users
+​
+## User Story: 
+As a company that works on a distributor model, we are frequently getting asked for data on products, in order for
 
-In the project directory, you can run:
+them to be frequently relisted on multiple different sites
 
-### `npm start`
+## What is the problem the product is going to address? 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Product manager helps to create an internal central database for products, where products can be added, via form or 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+csv for mass imports, edited, and deleted, then exported as a csv to be distributed
+​
+## How does the product solve the problem?
+​
+It allows for products to be added, edited and exported in order to pass these along to distributors and resellers.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Suitable for any company.
+​
+​
+## What were the technologies used?
+​
+Back End:
+Express
+Node.js
+Heroku
+Cloudinary
+Mongoose
+MongoDB
+​
+Front End:
+React
+React Bootstrap
+React Charts
+React-CSV
+Flatfile
+Cloudinary
+​
+## Installation
+To run the application locally, first clone this repository with the following command.
+​
+git clone https://github.com/Nikstar-1/Product_Managment_Database
+​
+Next, install the application dependencies.
+​
+npm install
+Finally, run the node server locally.
+​
+node server
+Now, open the local application on port 3000 at the URL: http://localhost:3000/.
+​
+​
+## Tasks 
+​
+George Robertshaw. robertsicher Front End, Product Backend, CSV download & upload, HTML Routing
+​
+Rekha Kumari. Nikstar-1 Cloudinary, React chart, Auth / Login, CSS, Front End, Heroku Deploy
+​
+​
+## Screenshots
+​
+!["Start Page"](..."Start page.")
+​
+!["Start Page"](..."Start page.")
+​
+!["Start Page"](..."Start page.")
