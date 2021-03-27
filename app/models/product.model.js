@@ -6,7 +6,6 @@ const Product = mongoose.model(
   
     productname: {
       type: String,
-      unique: true,
       trim: true
     },
     manufacturer: {
