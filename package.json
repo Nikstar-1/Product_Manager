@@ -6,10 +6,11 @@
   "scripts": {
 
  "start": "node server.js",
-  "heroku-postbuild": "cd client && npm install && npm run build",
+
   "client": "cd client && npm run start",
   "install": "cd client && npm install",
-  "build": "cd client && npm run build"
+  "build": "cd client && npm run build",
+  "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",

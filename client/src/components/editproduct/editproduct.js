@@ -1,8 +1,9 @@
 import {Button, Form, Container, Card} from 'react-bootstrap';
 import React, { Component } from "react";
 import axios from "axios";
+import { Redirect,withRouter } from "react-router-dom";
 
-export default class EditProduct extends Component {
+ class EditProduct extends Component {
   constructor(props) {
     super(props);
 
@@ -31,7 +32,7 @@ export default class EditProduct extends Component {
   
 
   componentDidMount() {
-      axios.get('http://localhost:8080/product/'+this.props.match.params.id)
+      axios.get('/product/'+this.props.match.params.id)
       .then(response => {
         console.log(response)
           this.setState({
@@ -120,9 +121,13 @@ export default class EditProduct extends Component {
     console.log(product);
 
     axios.post('http://localhost:8080/product/update/'+this.props.match.params.id, product)
-    .then(res => console.log(res.data));
+    .then(res => {
+      
+      console.log(res.data)
+      window.history.push("/login")
+    });
 
-    window.location="/catalogue"
+   
   }
 
     // const [show, setShow] = useState(false);
@@ -180,4 +185,4 @@ export default class EditProduct extends Component {
     }
   }
   
-  
+  export default withRouter(EditProduct);

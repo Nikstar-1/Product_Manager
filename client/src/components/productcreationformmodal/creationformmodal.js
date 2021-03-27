@@ -1,9 +1,10 @@
-import {Button, Form, Modal} from 'react-bootstrap';
+import { Button, Form, Modal } from "react-bootstrap";
 import React, { Component } from "react";
+import { Redirect, withRouter } from "react-router-dom";
 
 import axios from "axios";
 
-export default class Productcreationmodal extends Component {
+class Productcreationmodal extends Component {
   constructor(props) {
     super(props);
 
@@ -25,9 +26,9 @@ export default class Productcreationmodal extends Component {
       dimensions: "",
       productcolours: "",
       marketinginfo: "",
-      image_url:"",
+      image_url: "",
       showHide: false,
-      no_of_products:""
+      no_of_products: "",
     };
   }
 
@@ -36,15 +37,14 @@ export default class Productcreationmodal extends Component {
   }
 
   onChangeProductname(e) {
-
     this.setState({
       productname: e.target.value,
     });
   }
-  onNumberOfProductChange(e){
+  onNumberOfProductChange(e) {
     this.setState({
-      no_of_products: e.target.value
-    })
+      no_of_products: e.target.value,
+    });
   }
 
   onChangeManufacturer(e) {
@@ -94,21 +94,16 @@ export default class Productcreationmodal extends Component {
       dimensions: this.state.dimensions,
       productcolours: this.state.productcolours,
       marketinginfo: this.state.marketinginfo,
-      image_url:this.state.image_url,
-      no_of_products:this.state.no_of_products
+      image_url: this.state.image_url,
+      no_of_products: this.state.no_of_products,
     };
 
     console.log(product);
 
     axios.post("/product/add", product).then((res) => console.log(res.data));
 
-    window.location = "/productsuccess";
+    this.props.history.push("/productsuccess");
   }
-
-  // const [show, setShow] = useState(false);
-
-  // handleClose = () => setShow(false);
-  // handleShow = () => setShow(true);
 
   render() {
     let widget = window.cloudinary.createUploadWidget(
@@ -119,79 +114,78 @@ export default class Productcreationmodal extends Component {
       (error, result) => {
         if (!error && result && result.event === "success") {
           this.setState({
-            image_url:result.info.url
-          })
+            image_url: result.info.url,
+          });
           console.log("Done! Here is the image info: ", result.info);
         }
       }
     );
     return (
       <>
-                  <Button variant="primary" onClick={() => this.handleModalShowHide()} size="lg" className="m-2">
-                    Add a product
-                  </Button>
+        <Button variant="primary" onClick={() => this.handleModalShowHide()} size="lg" className="m-2">
+          Add a product
+        </Button>
 
-                  <Modal show={this.state.showHide}>
-                    <Modal.Header closeButton onClick={() => this.handleModalShowHide()}>
-                      <Modal.Title>Add a product</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                    <Form onSubmit={this.onSubmit}>
-                      <Form.Group controlId="Product name">
-                        <Form.Label>Product Name</Form.Label>
-                        <Form.Control type="textarea" required value={this.state.productname} onChange={this.onChangeProductname} />
+        <Modal show={this.state.showHide}>
+          <Modal.Header closeButton onClick={() => this.handleModalShowHide()}>
+            <Modal.Title>Add a product</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Form onSubmit={this.onSubmit}>
+              <Form.Group controlId="Product name">
+                <Form.Label>Product Name</Form.Label>
+                <Form.Control type="textarea" required value={this.state.productname} onChange={this.onChangeProductname} />
 
-                        <button className="btn btn-secondary mt-3"
-                          onClick={() => {
-                            widget.open();
-                          }}
-                        >
-                          Add an image
-                        </button>
-                      </Form.Group>
-                      <Form.Group controlId="partnumber">
-                        <Form.Label>Part Number</Form.Label>
-                        <Form.Control type="textarea" required value={this.state.partnumber} onChange={this.onChangePartNumber} />
-                      </Form.Group>
+                <button
+                  className="btn btn-secondary mt-3"
+                  onClick={() => {
+                    widget.open();
+                  }}
+                >
+                  Add an image
+                </button>
+              </Form.Group>
+              <Form.Group controlId="partnumber">
+                <Form.Label>Part Number</Form.Label>
+                <Form.Control type="textarea" required value={this.state.partnumber} onChange={this.onChangePartNumber} />
+              </Form.Group>
 
-                      <Form.Group controlId="quantity">
-                        <Form.Label>Quantity of products</Form.Label>
-                        <Form.Control type="textarea" required value={this.state.no_of_products} onChange={this.onNumberOfProductChange} />
-                      </Form.Group>
+              <Form.Group controlId="quantity">
+                <Form.Label>Quantity of products</Form.Label>
+                <Form.Control type="textarea" required value={this.state.no_of_products} onChange={this.onNumberOfProductChange} />
+              </Form.Group>
 
-
-                      <Form.Group controlId="manufacturer">
-
-                        <Form.Label>Manufacturer</Form.Label>
-                        <Form.Control type="textarea" required value={this.state.manufacturer} onChange={this.onChangeManufacturer} />
-                      </Form.Group>
-                      <Form.Group controlId="category">
-                        <Form.Label>Product Category</Form.Label>
-                        <Form.Control type="textarea" required value={this.state.productcategory} onChange={this.onChangeProductCategory} />
-                      </Form.Group>
-                      <Form.Group controlId="Dimesnions">
-                        <Form.Label>Dimensions</Form.Label>
-                        <Form.Control type="textarea" required value={this.state.dimensions} onChange={this.onChangeDimensions} />
-                      </Form.Group>
-                      <Form.Group controlId="colours">
-                        <Form.Label>Colours</Form.Label>
-                        <Form.Control type="textarea" required value={this.state.productcolours} onChange={this.onChangeProductColours} />
-                      </Form.Group>
-                      <Form.Group controlId="marketingfinfo">
-                        <Form.Label>Marketing Text</Form.Label>
-                        <Form.Control as="textarea" rows={5} required value={this.state.marketinginfo} onChange={this.onChangeMarketingInfo} />
-                      </Form.Group>
-                      <Button variant="primary" type="submit" className="mr-3" value="Create New Product">
-                        Add Product
-                      </Button>
-                      <Button variant="secondary" onClick={() => this.handleModalShowHide()}>
-                        Close
-                      </Button>
-                    </Form>
-                    </Modal.Body>
-                  </Modal>
-            
+              <Form.Group controlId="manufacturer">
+                <Form.Label>Manufacturer</Form.Label>
+                <Form.Control type="textarea" required value={this.state.manufacturer} onChange={this.onChangeManufacturer} />
+              </Form.Group>
+              <Form.Group controlId="category">
+                <Form.Label>Product Category</Form.Label>
+                <Form.Control type="textarea" required value={this.state.productcategory} onChange={this.onChangeProductCategory} />
+              </Form.Group>
+              <Form.Group controlId="Dimesnions">
+                <Form.Label>Dimensions</Form.Label>
+                <Form.Control type="textarea" required value={this.state.dimensions} onChange={this.onChangeDimensions} />
+              </Form.Group>
+              <Form.Group controlId="colours">
+                <Form.Label>Colours</Form.Label>
+                <Form.Control type="textarea" required value={this.state.productcolours} onChange={this.onChangeProductColours} />
+              </Form.Group>
+              <Form.Group controlId="marketingfinfo">
+                <Form.Label>Marketing Text</Form.Label>
+                <Form.Control as="textarea" rows={5} required value={this.state.marketinginfo} onChange={this.onChangeMarketingInfo} />
+              </Form.Group>
+              <Button variant="primary" type="submit" className="mr-3" value="Create New Product">
+                Add Product
+              </Button>
+              <Button variant="secondary" onClick={() => this.handleModalShowHide()}>
+                Close
+              </Button>
+            </Form>
+          </Modal.Body>
+        </Modal>
       </>
     );
   }
 }
+export default withRouter(Productcreationmodal);

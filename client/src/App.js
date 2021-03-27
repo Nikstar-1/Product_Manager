@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "./components/nav/nav";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Dashboard from "./components/dashboard/dashboard";
-import Catalogue from "./components/catalogue/catalogue";
+import Catalogue from "./components/csvuploadmodal/catalogue";
 import Productcreation from "./components/productcreation/productcreation";
 import CatalogueExport from "./components/catalogueexport/catalogueexport";
 import ErrorPage from "./components/error/errorpage";
@@ -35,7 +35,7 @@ function App() {
           <Route path="/catalogue" exact component={Catalogue} />
           <Route path="/edit/:id" component={EditProduct} />
           <Route path="/productsuccess" exact component={Addsuccess} />
-          <Route path="/newproduct" exact component={Productcreation} />
+          <Route path="/new-product" exact component={Productcreation} />
           <Route path="/export" exact component={CatalogueExport} />
           <Route path="/cloudinary" component={Cloudinary} />
           <Route path="/404" exact component={ErrorPage} />

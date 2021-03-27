@@ -2,7 +2,7 @@
 import React from "react";
 import { FlatfileButton } from "@flatfile/react";
 import axios from "axios";
-
+import { Redirect,withRouter } from "react-router-dom";
 
 function Csvuploadmodal() {
     return (
@@ -29,9 +29,9 @@ function Csvuploadmodal() {
             }}
             onData={async (results) => {
               axios.post('/product/csvadd', results.validData)
-                .then(res => console.log(res.data));
-              return "Done!";
-              window.location="/catalogue"
+                .then(res => {console.log(res.data); });
+                this.props.history.push("/catalogue")
+             
             }}
         >
           Add a CSV
@@ -40,4 +40,4 @@ function Csvuploadmodal() {
     );
   }
   
-  export default Csvuploadmodal;
+  export default withRouter(Csvuploadmodal);
