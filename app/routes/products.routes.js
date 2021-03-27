@@ -51,7 +51,7 @@ router.route('/csvadd').post(async(req,res) => {
     const productcolours = item.productcolours;
     const marketinginfo = item.marketinginfo;
     const dateOfOrder = new Date();
-    const no_of_products = req.body.no_of_products;
+    const no_of_products = item.no_of_products;
     const image_url = item.image_url;
     console.log("Item", item);
 
