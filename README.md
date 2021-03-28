@@ -81,7 +81,7 @@ Now, open the local application on port 3000 at the URL: http://localhost:3000/.
 ​
 George Robertshaw. robertsicher Front End, Product Backend, CSV download & upload, HTML Routing
 ​
-Rekha Kumari. Nikstar-1 Cloudinary, React chart, Auth / Login, CSS, Front End, Heroku Deploy
+Rekha Kumari. Nikstar-1 Cloudinary, React chart, JWT Auth / Login, CSS, Front End, Heroku Deploy, Backend. 
 ​
 ​
 ## Screenshots
@@ -90,3 +90,11 @@ Rekha Kumari. Nikstar-1 Cloudinary, React chart, Auth / Login, CSS, Front End, H
 ​
 !["Start Page"](client/src/Dashboard.png "Start page.")
 ​
+## License
+Licensed under the MIT License.
+
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, 
+
+and larger works may be distributed under different terms and without source code.
+
+MIT license

@@ -18,7 +18,6 @@ import Addsuccess from "./components/addsuccess/addsuccess";
 import Cloudinary from "./components/Cloudinary";
 import EditProduct from "./components/editproduct/editproduct";
 
-
 function App() {
   return (
     <Router>

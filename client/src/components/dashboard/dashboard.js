@@ -2,10 +2,10 @@ import React from "react";
 import { Container } from "react-bootstrap";
 // import { Chart } from 'react-charts'
 import axios from "axios";
-import { Redirect, Link ,withRouter} from "react-router-dom";
+import { Redirect, Link, withRouter } from "react-router-dom";
 import { NotificationContainer, NotificationManager } from "react-notifications";
 import { Bar, Line } from "react-chartjs-2";
- class Dashboard extends React.Component {
+class Dashboard extends React.Component {
   constructor(props) {
     super(props);
 
@@ -124,9 +124,8 @@ import { Bar, Line } from "react-chartjs-2";
                 {this.state.products_length}
               </h1>
               <Link to={"/catalogue"}>
-            
                 {/* <a href="#" className="mx-1 btn btn-outline-secondary"> */}
-                  Show products
+                Show products
                 {/* </a> */}
               </Link>
             </div>
@@ -174,4 +173,4 @@ import { Bar, Line } from "react-chartjs-2";
     );
   }
 }
-export default withRouter(Dashboard)
+export default withRouter(Dashboard);

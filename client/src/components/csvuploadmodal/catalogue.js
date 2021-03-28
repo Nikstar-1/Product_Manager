@@ -1,8 +1,8 @@
 import React from "react";
 import ProductTable from "../producttable/producttable";
 import axios from "axios";
-import { Redirect,withRouter } from "react-router-dom";
-class Catalogue extends React.Component{
+import { Redirect, withRouter } from "react-router-dom";
+class Catalogue extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -61,15 +61,15 @@ class Catalogue extends React.Component{
       return <Redirect to="/sign-in" />;
     }
   };
-  render(){
-    return ( 
-    <div className="mt-3">
-      <h1>Catalogue</h1>
-      {this.renderRedirect()}
-      <ProductTable />
-  </div>)
+  render() {
+    return (
+      <div className="mt-3">
+        <h1>Catalogue</h1>
+        {this.renderRedirect()}
+        <ProductTable />
+      </div>
+    );
   }
 }
-
 
 export default withRouter(Catalogue);

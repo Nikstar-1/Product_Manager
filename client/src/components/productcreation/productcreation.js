@@ -1,10 +1,10 @@
-import { Container, Row} from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Productcreationmodal from "../productcreationformmodal/creationformmodal";
-import Csvuploadmodal from '../csvuploadmodal/csvuploadmodal'
+import Csvuploadmodal from "../csvuploadmodal/csvuploadmodal";
 
 import React from "react";
 import axios from "axios";
-import { Redirect, Link} from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 class Productcreation extends React.Component {
   constructor(props) {
     super(props);
@@ -68,14 +68,14 @@ class Productcreation extends React.Component {
     return (
       <div>
         <Container>
-        <h1 className="mt-3">Add a new product</h1>
+          <h1 className="mt-3">Add a new product</h1>
           <Row className="justify-content-center">
             <Productcreationmodal />
             <Csvuploadmodal />
-            <Link to="./CSV-TEMPLATE.csv" target="_blank" download className="btn btn-secondary btn-lg m-2">Download the CSV template</Link>
-            
+            <Link to="./CSV-TEMPLATE.csv" target="_blank" download className="btn btn-secondary btn-lg m-2">
+              Download the CSV template
+            </Link>
           </Row>
-
         </Container>
         {this.renderRedirect()}
       </div>
