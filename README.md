@@ -12,9 +12,11 @@ Product Manager
 ## Website Title and Description
 ​
 Product Manager
-MERN application 
+
+MERN application -
+
 ​
-An app to for companies to internally manage the products that they are listing on distributors sites so they can 
+An app for companies to internally manage the products that they are listing on distributors sites so they can 
 
 easily upload, store and download information as CSV’s in order to create listings on other websites.
 ​
