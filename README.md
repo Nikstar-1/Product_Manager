@@ -1,6 +1,5 @@
 # Project 3
-​
-​
+
 ## Group 2:
 George Robertshaw. robertsicher
 
@@ -9,11 +8,12 @@ Rekha Kumari. Nikstar-1
 ​
 ## Project Title: 
 
-Product Manager
+Product Manager 
 ​
 ## Website Title and Description
 ​
 Product Manager
+MERN application 
 ​
 An app to for companies to internally manage the products that they are listing on distributors sites so they can 
 
@@ -90,3 +90,10 @@ Rekha Kumari. Nikstar-1 Cloudinary, React chart, Auth / Login, CSS, Front End, H
 ​
 !["Start Page"](client/src/Dashboard.png "Start page.")
 ​
+
+## License
+Licensed under the MIT License.
+
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+
+MIT license
