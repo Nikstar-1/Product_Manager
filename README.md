@@ -98,6 +98,10 @@ Rekha Kumari. Nikstar-1 Cloudinary, React chart, JWT Auth / Login, CSS, Front En
 
 !["Start Page"](client/src/cloudinary.png "Start page.")
 
+!["Start Page"](client/src/Graph.png "Start page.")
+
+!["Start Page"](client/src/Untitled.png "Start page.")
+
 !["Start Page"](client/src/image.png "Start page.")
 
 !["Start Page"](client/src/signup.png "Start page.")
