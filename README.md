@@ -1,6 +1,5 @@
-# Project 3
+## Authors
 
-## Group 2:
 George Robertshaw. robertsicher
 
 Rekha Kumari. Nikstar-1
