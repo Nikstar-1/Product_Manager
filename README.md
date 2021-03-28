@@ -95,17 +95,19 @@ Rekha Kumari. Nikstar-1 Cloudinary, React chart, JWT Auth / Login, CSS, Front En
 !["Start Page"](client/src/catalogue.png "Start page.")
 ​
 !["Start Page"](client/src/Dashboard.png "Start page.")
+
+!["Start Page"](client/src/cloudinary.png "Start page.")
+
+!["Start Page"](client/src/image.png "Start page.")
+
+!["Start Page"](client/src/signup.png "Start page.")
 ​
-<<<<<<< HEAD
-## License
-Licensed under the MIT License.
+!["Start Page"](client/src/signin.png "Start page.")
 
-A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, 
+!["Start Page"](client/src/uploadmodal.png "Start page.")
 
-and larger works may be distributed under different terms and without source code.
-
-MIT license
-=======
+!["Start Page"](client/src/bulk.png "Start page.")
+​
 
 ## License
 Licensed under the MIT License.
@@ -113,4 +115,3 @@ Licensed under the MIT License.
 A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 MIT license
->>>>>>> 2c6221e7195418f64e7cfbcb3ea080c50f8f406f
