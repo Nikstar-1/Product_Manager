@@ -1,6 +1,5 @@
 # Project 3
-​
-​
+
 ## Group 2:
 George Robertshaw. robertsicher
 
@@ -9,18 +8,22 @@ Rekha Kumari. Nikstar-1
 ​
 ## Project Title: 
 
-Product Manager
+Product Manager 
 ​
 ## Website Title and Description
 ​
 Product Manager
+MERN application 
 ​
 An app to for companies to internally manage the products that they are listing on distributors sites so they can 
 
 easily upload, store and download information as CSV’s in order to create listings on other websites.
 ​
 ​
-The website can be found at the following address: https://desolate-chamber-36305.herokuapp.com/
+## The website can be found at the following address:
+
+ https://desolate-chamber-36305.herokuapp.com/
+
 ​
 ## Who is our audience? 
 ​
@@ -66,11 +69,14 @@ Cloudinary
 ## Installation
 To run the application locally, first clone this repository with the following command.
 ​
-git clone https://github.com/Nikstar-1/Product_Managment_Database
+git clone 
+
+https://github.com/Nikstar-1/Product_Managment_Database
 ​
 Next, install the application dependencies.
 ​
 npm install
+
 Finally, run the node server locally.
 ​
 node server
@@ -90,6 +96,7 @@ Rekha Kumari. Nikstar-1 Cloudinary, React chart, JWT Auth / Login, CSS, Front En
 ​
 !["Start Page"](client/src/Dashboard.png "Start page.")
 ​
+<<<<<<< HEAD
 ## License
 Licensed under the MIT License.
 
@@ -98,3 +105,12 @@ A short and simple permissive license with conditions only requiring preservatio
 and larger works may be distributed under different terms and without source code.
 
 MIT license
+=======
+
+## License
+Licensed under the MIT License.
+
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+
+MIT license
+>>>>>>> 2c6221e7195418f64e7cfbcb3ea080c50f8f406f
