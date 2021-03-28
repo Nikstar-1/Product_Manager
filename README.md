@@ -20,7 +20,10 @@ An app to for companies to internally manage the products that they are listing 
 easily upload, store and download information as CSV’s in order to create listings on other websites.
 ​
 ​
-The website can be found at the following address: https://desolate-chamber-36305.herokuapp.com/
+## The website can be found at the following address:
+
+ https://desolate-chamber-36305.herokuapp.com/
+
 ​
 ## Who is our audience? 
 ​
@@ -66,11 +69,14 @@ Cloudinary
 ## Installation
 To run the application locally, first clone this repository with the following command.
 ​
-git clone https://github.com/Nikstar-1/Product_Managment_Database
+git clone 
+
+https://github.com/Nikstar-1/Product_Managment_Database
 ​
 Next, install the application dependencies.
 ​
 npm install
+
 Finally, run the node server locally.
 ​
 node server
