@@ -88,7 +88,7 @@ Now, open the local application on port 3000 at the URL: http://localhost:3000/.
 ​
 ## Tasks 
 ​
-George Robertshaw. robertsicher Front End, Product Backend, CSV download & upload, HTML Routing
+George Robertshaw. robertsicher Front End, CSV download & upload, HTML Routing
 ​
 Rekha Kumari. Nikstar-1 Cloudinary, React chart, JWT Auth / Login, CSS, Front End, Heroku Deploy, Backend. 
 ​
